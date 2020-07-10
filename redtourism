@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>仿-韶山旅游网</title>
+		<link rel="stylesheet" type="text/css" href="css/commom.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/nav.css"/>
+		<link rel="stylesheet" type="text/css" href="css/section.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+	</head>
+	<body>
+		<header>
+			<div class="header-main">
+				<div class="pageName">韶山旅游网</div>
+				<form>
+					<input type="text" name="seacherBox" id="seacherBox" placeholder="请输入所搜索内容的关键词" autofocus="autofocus" min="1" max="24" required="required" />
+					<input type="button" name="seacher" id="seacher" value="搜索" />
+					<div class="seacher-text">
+						<span class="hotSeacher">热门搜索:</span><span class="hotWord">毛主席故居&nbsp;滴水洞&nbsp;价格&nbsp;韶山一日游&nbsp;韶峰</span>
+					</div>	
+				</form>
+			</div>
+		</header>
+		<nav>
+			<ul>
+				<li><a href="#">首页</a></li>
+				<li><a href="#">资讯动态</a></li>
+				<li><a href="#">周边景区</a></li>
+				<li><a href="#">美图美景</a></li>
+				<li><a href="#">旅游攻略</a></li>
+				<li><a href="#">旅游服务</a></li>
+				<li><a href="#">旅游活动</a></li>
+				<li><a href="#">文明创建</a></li>
+			</ul>
+		</nav>
+		<section>
+			<div class="left">
+				<div class="slideShow">
+					<input type="radio" name="p" id="p1" value="" checked=""/>
+					<input type="radio" name="p" id="p2" value="" />
+					<input type="radio" name="p" id="p3" value="" />
+					<ul class="imgBox">
+						<li><img src="img/l1.jpg"/></li>
+						<li><img src="img/l2.jpg"/></li>
+						<li><img src="img/l4.jpg"/></li>
+					</ul>
+					<div class="slideShow-button">
+						<label for="p1">1</label>
+						<label for="p2">2</label>
+						<label for="p3">3</label>
+					</div>	
+					<!--"slideShow"div是一个能够点击自由切换的轮播图-->
+					<ul class="auto-slideShow">
+					<!--在保证纯css+html下，前面轮播图由于未知原因，animation-state-play在伪类选择器：hover失效，因此经本人思考先采用层叠方法，
+						增加html多余结构，应用css动画效果，制作一个全自动轮播图并绑定伪类选择器覆盖于另一个能点击切换的轮播图，从而造就有瑕疵的动静结合的轮播效果。
+						
+					<!--"auto-slideShow"div是一个同上一个内容一样的轮播图且覆盖于上一个轮播图的表面，这个轮播图区别是采用动画效果从而够自动切换图片。
+						当鼠标悬浮于"slideShow-button"div上，"auto-slideShow"div的display属性设置为none暂时消失。
+					-->
+						<li><img src="img/l1.jpg"/></li>
+						<li><img src="img/l2.jpg"/></li>
+						<li><img src="img/l4.jpg"/></li>
+					</ul>
+				</div>
+				<div class="scenicSpot">
+					<div class="scenicSpot-title">
+						<div class="line"></div>							
+						<span class="title-text">周边景区</span>
+						<div class="line"></div>
+					</div>
+					<div class="scenicSpot-area">
+						<div class="spot">
+							<div class="img"><img src="img/p5.jpg"/></div>
+							<div class="text">
+								<div class="inner-text">
+									<h1>毛泽东故居</h1>
+									<p>位于韶山市韶山冲上屋场。故居系土木结构，泥砖青瓦，现有房屋13间，为毛泽东的父亲毛顺生所建。
+										1893年12月26日，毛泽东就诞生于此，并在这里度过了他的童年和少年时代。故居前，有稻田和
+										池塘，后面是小山，山上长满苍松翠竹。毛泽东少年曾在后山读书、牧牛，在池塘游泳、稻田耕作过。
+										1910年秋，受当时进步人士及书刊的影响，毛泽东离开家乡到外地求学。1920年，毛泽东的父母
+										相继去世以后，他的弟妹们也离开家乡，从事革命活动。1925年，毛泽东偕夫人杨开慧到韶开展农
+										民运动，在故居召开多种会议并建立了中共韶山支部。1927年，毛泽东考察湖南农民运动，在故居
+										召开过调查会。此后一别32年。1959年，毛泽东回故乡，探视考察了韶山人民的生产生活情况，也
+										拜祭了父母的坟墓，并写下了《七律·到韶山》的著名诗篇。1966年，毛泽东再次到故乡，住在故居
+										西面4公里处的滴水洞，这是他最后一次回韶山。毛泽东故居是一座普通的农舍。1929年，曾被国民
+										党破坏，1950年以后，多次进行了修茸，恢复了原貌。室内陈设，也按毛泽东当年居住时的原样布置，
+										有些用具为原物。1961年，国务院将此列为国家重点文物保护单位。</p>
+										<div class="ellipsis">...</div>
+									<button>详细阅读</button>
+								</div>
+							</div>
+						</div>
+						<div class="spot">
+							<div class="img"><img src="img/p2.jpg"/></div>
+							<div class="text">
+								<div class="inner-text">
+									<h1>毛泽东纪念馆</h1>
+									<p>位于故居以西0．5公里处，原称毛泽东旧居陈列馆。1982年改为现名，馆名邓小平题字。毛泽东纪念馆前
+										有一条大道和一个宽敞的广场。广场中央，有一尊毛泽东铜像，是1993年毛泽东诞辰100周年时建立的。
+										纪念馆建筑面积5000平方米，采用韶山农村房屋外貌，城市园林风格建造，依山就势，高低自然，展室
+										高大、宽敞、明亮，以亭台、小桥、回廊相连，显得十分雅致堂皇。毛泽东纪念馆主要陈列毛泽东的生平
+										事迹。共分为8个展室，第一室，毛泽东青少年时代，介绍他由一个普通农民的儿子，成为一个马克思主
+										义者的过程；第二室，介绍毛泽东在中国共产党创建时期的革命活动；第三室，介绍毛泽东在第一次国内
+										革命战争时期致力于国共合作，开展国民革命的情况；第四室，介绍毛泽东在第二次国内革命战争时期进
+										行武装斗争，发展革命力量的活动情况；第五室，介绍毛泽东在八年抗战中坚持党的抗日民族统一战线，
+										实行人民战争，取得抗战胜利的情况；第六室，介绍毛泽东在解放战争时期，领全党全军和全国人民艰苦
+										奋战，推翻国民党政府，夺取革命战争最后胜利的情况；第七室和第八室，介绍毛泽东在新中国建设时期
+										领导社会主义革命和建设的情况。纪念馆还有一室介绍了毛泽东一家6位亲人为中国人民的解放事业光荣
+										献身的光辉事迹。</p>
+									<div class="ellipsis">...</div>
+									<button>详细阅读</button>
+								</div>
+							</div>
+						</div>	
+						<div class="spot">
+							<div class="img"><img src="img/p3.jpg"/></div>
+							<div class="text">
+								<div class="inner-text">
+									<h1>滴水洞</h1>
+									<p>又名“西方山洞”、藏卧在这条充满生机的峡谷里，世人比拟为“天国桃源”。她是韶山这条长长峡谷的源头。
+										其间有条小溪，汨汨流淌，终年不断，滴石成洞，故而得名。滴水洞山势天成、南峙龙头山，北踞虎坪，
+										后蹲牛形山。丘壑间，林莽摇风，飞禽走兽，灵卉嘉木，杜鹃、山茶、白兰、香樟、银杏、金桂、樱桃、
+										腊梅，四时都有开放不尽的鲜花。滴水洞满山苍翠，三伏暑天，自凉无汗，游人忽发奇想地赞叹：“人间
+										滴水洞，天上广寒宫”。1966年6月毛泽东回乡在滴水洞一号楼住了10天，滴水洞得以名噪一时。滴水
+										洞对面新建八景亭。亭飞六角，翼然山腰，一联云：“滴水难于因入海，洞天独异合藏龙”。另一联为“地
+										拥千山万山碧，山涵五月六月寒”。皆为写实。</p>
+									<div class="ellipsis">...</div>
+									<button>详细阅读</button>
+								</div>
+							</div>
+						</div>
+						<div class="spot">
+							<div class="img"><img src="img/p4.jpg"/></div>
+							<div class="text">
+								<div class="inner-text">
+									<h1>毛泽东诗词碑林</h1>
+									<p>位于毛泽东故居南部的韶峰脚下，为纪念毛泽东诞辰100周年而建。碑林占地面积2万平方米，按青少年时期、第二次、第三次国内革命战争时期和新中国建设时期分设4个区，共镌刻有毛泽东诗词50首，其中毛泽东手迹25首，现代中国书法家书录22首。最大的巨碑《七律·到韶山》长12．26米，高8.3米，厚0．9米，寓意毛泽东的诞辰日、寿辰和忌日，规模为全国之最。韶山毛泽东碑林，全部用大理石、汉白玉、花岗岩刻琢，巨细各异，错落有致，形态迥然，与附近的田园风光和透迤山势交相辉映，为韶山诸景之一绝。</p>
+									<div class="ellipsis">...</div>
+									<button>详细阅读</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="list">
+					<div class="left-list">
+						<h1>资讯动态</h1>
+						<ul>
+							<li><a href="#">暑假，韶山红色旅游更添“火”</a></li>
+							<li><a href="#">韶山核心景区倡导文明旅游 绿色出行</a></li>
+							<li><a href="#">韶山周末众多游客缅怀先烈</a></li>
+							<li><a href="#">毛主席遗物的坚实守护者</a></li>
+							<li><a href="#">韶山景区换乘，“换”来多方点赞</a></li>
+							<li><a href="#">韶山迎来暑期参观小高峰</a></li>
+						</ul>
+					</div>
+					<div class="right-list">
+						<h1>旅游活动</h1>
+						<ul>
+							<li><a href="#">重大活动（一）</a></li>
+							<li><a href="#">重大活动（二）</a></li>
+							<li><a href="#">重大活动（三）</a></li>
+							<li><a href="#">重大活动（四）</a></li>
+							<li><a href="#">重大活动（五）</a></li>
+							<li><a href="#">周年纪念活动</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="right">
+				<div class="serviceOnline">
+					<div class="serviceOnline-container">
+						
+					</div>
+				</div>
+				<div class="service">
+					<div class="service-title">旅游服务</div>
+					<div class="service-menu">
+						<div class="option option1">景区地图</div>
+						<div class="option option2">票务预订</div>
+						<div class="option option3">交通信息</div>
+						<div class="option option4">周边住宿</div>
+						<div class="option option5">天气预报</div>
+						<div class="option option6">旅游推荐</div>
+						<div class="option option7">导游服务</div>
+						<div class="option option8">旅游指南</div>
+					</div>
+				</div>
+				<div class="strategy">
+					<h1>韶山旅游攻略</h1>
+					<ul>
+						<li><a href="#">参观毛泽东故居注意事项</a></li>
+						<li><a href="#">史上全面的韶山旅游攻略</a></li>
+						<li><a href="#">韶山热门旅游路线攻略</a></li>
+						<li><a href="#">韶山游玩出行攻略</a></li>
+						<li><a href="#">韶山住宿攻略</a></li>
+						<li><a href="#">韶山吃喝攻略</a></li>
+						<li><a href="#">韶山环保攻略</a></li>
+						<li><a href="#">韶山自驾游攻略</a></li>
+					</ul>
+				</div>
+				<article>
+						<div class="title-article">
+							<h1>品读韶山</h1>
+						</div>
+						<div class="article">				
+							<h1>毛泽东的故居──韶山</h1>
+							<p>“韶”乃虞舜时乐名。《书•益稷》曰：“箫韶九成，引凤来仪。”史载：“韶山，
+							相传舜南巡时，奏韶乐于此，因名。”《辞海》据此诠释韶山：“相传古代虞舜南巡时，
+							奏韶乐于此，故名……山有八景，风景优美。”</p>
+							 <p>虞舜，远古时代父系氏族社会后期的部落联盟首领。姓尧，号有虞氏，名重生，
+							世称虞舜。他是继尧之后被中华民族世代推崇的又一明君圣主。他为尧所器重，尧不但
+							把盟主的尊位禅让于他，还把两位爱女娥皇、女英许配与他。舜继位之后，为造福人类，
+							开拓疆土，辞别爱侣，甘冒苦辛，渡黄河，涉长江，深入荆楚蛮荒之地，探测山川利弊，
+							规划拓垦宏图。南下途中舜与侍从宿营韶山，侍从们为舜帝载歌载舞，随着优美的音乐
+							舞蹈，山崖翕然，山鸣谷应，声震林木，凤凰闻乐展翅，嘤嘤和鸣。山间胜境，人间盛
+							会，亘古传诵。日久，人们便把舜帝欣赏过的音乐称为韶乐，把他赏韶乐的山岭叫韶山。</p>
+							 <p> 韶山，群山环抱，峰峦耸峙，气势磅礴，翠竹苍松，田园俊秀，山川相趣。她还是毛
+							主席的故居，是全国爱国主义教育示范基地，是访湘人士首选和必选的旅游目的地。</p>
+							<br />
+							<br />
+							<br />
+						</div>		
+				</article>
+			</div>
+			<div class="bottom">
+				<div class="bottom-title">
+					<h1>美景美图</h1>
+					<div class="left-line"></div>
+				</div>
+				<div class="beautifulScenery">
+					<div class="beauty">
+						<img src="img/m7.jpg"/>
+					</div>
+					<div class="beauty">
+						<img src="img/m2.jpg"/>
+					</div>
+					<div class="beauty">
+						<img src="img/m3.jpg"/>
+					</div>
+					<div class="beauty">
+						<img src="img/m4.jpg"/>
+					</div>
+					<div class="beauty">
+						<img src="img/m5.jpg"/>
+					</div>
+					<div class="beauty">
+						<img src="img/m6.jpg"/>
+					</div>
+					
+				</div>	
+			</div>
+		</section>
+		<footer>
+		</footer>
+	</body>
+</html>
